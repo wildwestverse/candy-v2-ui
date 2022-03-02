@@ -115,6 +115,7 @@ const MintButtonContainer = styled.div`
 
 const Logo = styled.div`
   flex: 0 0 auto;
+  margin-right:20px;
 
   img {
     height: 60px;
@@ -231,10 +232,10 @@ const ShimmerTitle = styled.h1`
   margin: 50px auto;
   text-transform: uppercase;
   animation: glow 2s ease-in-out infinite alternate;
-  color: var(--main-text-color);
+  color: #c7b39b;
   @keyframes glow {
     from {
-      text-shadow: 0 0 20px var(--main-text-color);
+      text-shadow: 0 0 20px #c7b39b;
     }
     to {
       text-shadow: 0 0 30px var(--title-text-color), 0 0 10px var(--title-text-color);
