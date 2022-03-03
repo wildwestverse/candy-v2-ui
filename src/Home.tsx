@@ -19,6 +19,8 @@ import {
     CANDY_MACHINE_PROGRAM,
 } from "./candy-machine";
 
+import { CrossmintPayButton } from "@crossmint/client-sdk-react-ui";
+
 const cluster = process.env.REACT_APP_SOLANA_NETWORK!.toString();
 const decimals = process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS ? +process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS!.toString() : 9;
 const splTokenName = process.env.REACT_APP_SPL_TOKEN_TO_MINT_NAME ? process.env.REACT_APP_SPL_TOKEN_TO_MINT_NAME.toString() : "TOKEN";
@@ -64,10 +66,11 @@ const Wallet = styled.ul`
 
 const ConnectButton = styled(WalletMultiButton)`
   border-radius: 18px !important;
-  padding: 6px 16px;
+  padding: 28px 28px;
   background-color: #4E44CE;
   margin: 0 auto;
 `;
+
 
 const NFT = styled(Paper)`
   min-width: 400px;
@@ -90,7 +93,7 @@ const Card = styled(Paper)`
 
 const MintButtonContainer = styled.div`
   button.MuiButton-contained:not(.MuiButton-containedPrimary).Mui-disabled {
-    color: #464646;
+    color: #e6e5d1;
   }
 
   button.MuiButton-contained:not(.MuiButton-containedPrimary):hover,
@@ -109,6 +112,7 @@ const MintButtonContainer = styled.div`
   @keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 #ef8f6e;
+      color: #eaebd8;
     }
   }
 `;
@@ -490,6 +494,12 @@ const Home = (props: HomeProps) => {
                             <WalletAmount>{(balance || 0).toLocaleString()} SOL<ConnectButton/></WalletAmount> :
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
+                    <CrossmintPayButton
+                collectionTitle="Test Collection"
+                collectionDescription="This is a CrossMint test collection!"
+                collectionPhoto="https://raw.githubusercontent.com/Wild-westverse/logo500/main/wwv_200x200.png"
+                clientId="058eeac7-3751-4c66-afc3-f77270c9d636"
+                    />
                 </WalletContainer>
                 <ShimmerTitle>Devnet WWV Cowgirl Minting Page!</ShimmerTitle>
                 <br/>
@@ -573,9 +583,15 @@ const Home = (props: HomeProps) => {
                     <DesContainer>
                         <Des elevation={2}>
                             <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>WWV Cowgirls Devnet</GoldTitle></LogoAligner>
-                            <p>Please welcome the WWV Cowgirls.</p>
-                            <p>The coolest NFT collection in Solana.</p>
-                            <p>Mint now.</p>
+                            <p>The second WildWestVerse collection is here! 
+                              WWV Cowboy raided Solana and 
+                              now its the girl’s turn!</p>
+                            <p>Please welcome the WWV Cowgirls !</p>
+                            <p>The coolest girl in solana is on the way.
+                              She will blow your mind with nearly 150 rarity options.
+                              Guns are her specialty and comes to hurt.
+                              She adores sweets and jewelry and wears very cool hats!</p>
+                              <p>Solana will burn today!</p>
                         </Des>
                     </DesContainer>
                 </MintContainer>
