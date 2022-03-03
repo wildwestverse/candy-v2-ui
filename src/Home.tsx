@@ -65,8 +65,11 @@ const Wallet = styled.ul`
 `;
 
 const ConnectButton = styled(WalletMultiButton)`
+  width: auto;
+  height:70px;
+  font-family: 'Rye', cursive;
   border-radius: 18px !important;
-  padding: 28px 28px;
+  padding: 6px 16px;
   background-color: #4E44CE;
   margin: 0 auto;
 `;
