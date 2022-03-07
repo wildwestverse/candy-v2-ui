@@ -504,7 +504,7 @@ const Home = (props: HomeProps) => {
                 clientId="058eeac7-3751-4c66-afc3-f77270c9d636"
                     />
                 </WalletContainer>
-                <ShimmerTitle>Devnet WWV Cowgirl Minting Page!</ShimmerTitle>
+                <ShimmerTitle>WWV Cowgirl Minting Page!</ShimmerTitle>
                 <br/>
 
 
@@ -519,7 +519,7 @@ const Home = (props: HomeProps) => {
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) &&
-                              <h3>You have {whitelistTokenBalance} whitelist mint(s) remaining.</h3>}
+                              <h3>You are whitelisted. Pre-sale and %20 discount.</h3>}
                             {wallet && isActive &&
                                 /* <p>Total Minted : {100 - (itemsRemaining * 100 / itemsAvailable)}%</p>}*/
                               <h3>TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}</h3>}
@@ -585,7 +585,7 @@ const Home = (props: HomeProps) => {
                     </DesContainer>
                     <DesContainer>
                         <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>WWV Cowgirls Devnet</GoldTitle></LogoAligner>
+                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>WWV Cowgirl</GoldTitle></LogoAligner>
                             <p>The second WildWestVerse collection is here! 
                               WWV Cowboy raided Solana and 
                               now its the girl’s turn!</p>
