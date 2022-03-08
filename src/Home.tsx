@@ -498,10 +498,10 @@ const Home = (props: HomeProps) => {
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                     <CrossmintPayButton
-                collectionTitle="Test Collection"
-                collectionDescription="This is a CrossMint test collection!"
+                collectionTitle="WWV Cowgirl"
+                collectionDescription="The second WildWestVerse collection is WWV Cowgirl!"
                 collectionPhoto="https://raw.githubusercontent.com/Wild-westverse/logo500/main/wwv_200x200.png"
-                clientId="058eeac7-3751-4c66-afc3-f77270c9d636"
+                clientId="ee68ddfb-31cd-40a0-a081-b7d935167b89"
                     />
                 </WalletContainer>
                 <ShimmerTitle>WWV Cowgirl Minting Page!</ShimmerTitle>
@@ -519,7 +519,7 @@ const Home = (props: HomeProps) => {
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) &&
-                              <h3>You are whitelisted. Pre-sale and %20 discount.</h3>}
+                              <h3>You are whitelisted. Pre-sale and 20% discount.</h3>}
                             {wallet && isActive &&
                                 /* <p>Total Minted : {100 - (itemsRemaining * 100 / itemsAvailable)}%</p>}*/
                               <h3>TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}</h3>}
