@@ -380,7 +380,7 @@ const Home = (props: HomeProps) => {
         setItemsRemaining(remaining);
         setIsSoldOut(remaining === 0);
         if (whitelistTokenBalance && whitelistTokenBalance > 0) {
-            let balance = whitelistTokenBalance - 1;
+            let balance = whitelistTokenBalance;
             setWhitelistTokenBalance(balance);
             setIsActive(balance > 0);
         }
